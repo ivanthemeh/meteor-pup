@@ -44,7 +44,7 @@ const App = props => (
           />
           : ''}
         <Navigation {...props} />
-        <Grid>
+        <Grid fluid>
           <Switch>
             <Route exact name="index" path="/" component={Index} />
             <Authenticated exact path="/documents" component={Documents} {...props} />

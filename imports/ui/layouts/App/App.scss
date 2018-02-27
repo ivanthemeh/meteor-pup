@@ -1,5 +1,11 @@
 @import '../../stylesheets/colors';
 
+body {
+  font-size: 16px;
+  overflow-x: hidden;
+  margin-bottom: 40px;
+}
+
 .App > .container {
   margin-bottom: 20px;
 }
@@ -19,5 +25,24 @@
 
   .btn {
     padding: 0;
+  }
+}
+
+.App {
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 0;
+    pointer-events: none;
+  }
+  // remove padding by positioning
+  .no-padding {
+    position: relative;
+    left: -15px;
+    width: 100vw;
   }
 }
